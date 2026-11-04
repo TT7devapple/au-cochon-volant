@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Au Cochon Volant — Rôtisserie, Paris 12e</title>
+  <meta name="description" content="Au Cochon Volant, rôtisserie au 15 rue Jules-César, Paris 12e. Cochon de lait rôti à la broche tous les jours, à deux pas de Gare de Lyon.">
+  <meta name="theme-color" content="#14183a">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Logo : cochon rond ailé, en papier découpé -->
+    <symbol id="pig-logo" viewBox="0 0 100 100">
+      <path class="p-yellow" d="M31 54 C22 38 8 35 2 42 C8 44 6 48 10 50 C6 53 7 57 13 58 C11 61 15 65 21 63 C26 61 30 58 31 54 Z" transform="translate(2 3)"/>
+      <path class="p-white"  d="M31 54 C22 38 8 35 2 42 C8 44 6 48 10 50 C6 53 7 57 13 58 C11 61 15 65 21 63 C26 61 30 58 31 54 Z"/>
+      <g transform="translate(100 0) scale(-1 1)">
+        <path class="p-yellow" d="M31 54 C22 38 8 35 2 42 C8 44 6 48 10 50 C6 53 7 57 13 58 C11 61 15 65 21 63 C26 61 30 58 31 54 Z" transform="translate(2 3)"/>
+        <path class="p-white"  d="M31 54 C22 38 8 35 2 42 C8 44 6 48 10 50 C6 53 7 57 13 58 C11 61 15 65 21 63 C26 61 30 58 31 54 Z"/>
+      </g>
+      <path class="p-deep" d="M30 37 Q22 15 31 17 Q39 21 45 30 Z"/>
+      <path class="p-deep" d="M70 37 Q78 15 69 17 Q61 21 55 30 Z"/>
+      <circle class="p-pink" cx="50" cy="55" r="27"/>
+      <ellipse class="p-deep" cx="50" cy="63" rx="12" ry="8.5"/>
+      <ellipse class="p-ink" cx="45.5" cy="63" rx="2" ry="3"/>
+      <ellipse class="p-ink" cx="54.5" cy="63" rx="2" ry="3"/>
+      <circle class="p-ink" cx="40" cy="48" r="3"/>
+      <circle class="p-ink" cx="60" cy="48" r="3"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#restaurant" data-i18n="skip">Aller au contenu</a>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#accueil" aria-label="Au Cochon Volant — accueil">
+    <svg class="nav__logo" aria-hidden="true"><use href="#pig-logo"/></svg>
+    <span class="nav__wordmark">Au Cochon Volant</span>
+  </a>
+  <nav class="nav__links" id="nav-links" aria-label="Sections">
+    <a href="#restaurant" data-i18n="nav.restaurant">Le restaurant</a>
+    <a href="#carte" data-i18n="nav.menu">La carte</a>
+    <a href="#avis" data-i18n="nav.reviews">Avis</a>
+    <a href="#trouver" data-i18n="nav.find">Nous trouver</a>
+    <a class="nav__tel" href="tel:+33658014216" data-i18n="nav.call">Réserver · 06 58 01 42 16</a>
+  </nav>
+  <div class="nav__end">
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <span aria-hidden="true">·</span>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n="nav.open">Menu</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Accueil -->
+  <section class="hero" id="accueil" aria-label="Accueil">
+    <div class="hero__media">
+      <img src="assets/facade.png" alt="La façade du restaurant Au Cochon Volant, rue Jules-César, un soir : lambrequin bleu canard, devanture en bois et salle éclairée" data-i18n-alt="hero.alt" fetchpriority="high">
+    </div>
+    <div class="hero__veil" aria-hidden="true"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Au Cochon <span>Volant</span></h1>
+      <p class="hero__sub" data-i18n="hero.sub">Rôtisserie · Paris 12<sup>e</sup></p>
+    </div>
+    <svg class="hero__clouds hero__clouds--back" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path id="cloud-back"/></svg>
+    <svg class="hero__clouds hero__clouds--front" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path id="cloud-front"/></svg>
+  </section>
+
+  <!-- Le restaurant -->
+  <section class="about" id="restaurant" aria-labelledby="about-title">
+    <div class="about__text">
+      <h2 id="about-title" data-i18n="about.title">Ici, les cochons volent.</h2>
+      <p class="lead" data-i18n="about.lead">On disait « quand les cochons voleront ». Rue Jules-César, à deux pas de Gare de Lyon, c'est chose faite.</p>
+      <p data-i18n="about.p1">Tous les jours, un cochon de lait tourne doucement sur la broche jusqu'à ce que sa peau craque. Autour de lui : terrines, pâté de tête, joue braisée et purée maison, frites, tiramisu. Une cuisine de produit, sans chichis, des assiettes généreuses et des vins à prix sages.</p>
+      <p data-i18n="about.p2">La salle est petite, l'accueil est grand. Venez en voisin, en voyageur entre deux trains, ou en bande affamée.</p>
+      <p class="about__tip" data-i18n="about.tip">Conseil d'ami : le cochon de lait part vite. Venez tôt.</p>
+    </div>
+
+    <figure class="rosace" id="rosace" aria-label="Rosace en papier découpé : le cochon volant">
+      <svg viewBox="-200 -200 400 400" role="img" aria-hidden="true">
+        <g class="rosace__spin">
+          <path class="layer l-green"  id="r-scallop-out" style="--i:0"/>
+          <path class="layer l-pink"   id="r-scallop-mid" style="--i:1"/>
+        </g>
+        <path class="layer l-yellow" id="r-sun" style="--i:2"/>
+        <circle class="layer l-cobalt" r="118" style="--i:3"/>
+        <g class="layer l-dots" id="r-dots" style="--i:4"></g>
+        <g class="layer" style="--i:5">
+          <path class="l-white" d="M-104 52c-6-16 8-30 24-24 6-16 32-18 40-2 14-4 26 8 22 22z"/>
+          <path class="l-white" d="M104 52c6-16-8-30-24-24-6-16-32-18-40-2-14-4-26 8-22 22z" transform="translate(-10 -120) scale(.7)"/>
+        </g>
+        <g class="layer rosace__pig" style="--i:6">
+          <g class="pig-bob">
+            <path class="l-deep" d="M-60 -6c-14-8-22 6-12 12 8 4 6-10-4-6" fill="none" stroke-width="6" stroke-linecap="round"/>
+            <rect class="l-deep" x="-42" y="18" width="13" height="26" rx="6"/>
+            <rect class="l-deep" x="-20" y="22" width="13" height="26" rx="6"/>
+            <rect class="l-deep" x="12"  y="22" width="13" height="26" rx="6"/>
+            <rect class="l-deep" x="32"  y="18" width="13" height="26" rx="6"/>
+            <ellipse class="l-pink2" cx="-6" cy="2" rx="58" ry="40"/>
+            <circle class="l-pink2" cx="44" cy="-14" r="30"/>
+            <path class="l-deep" d="M28 -38q2-30 24-14z"/>
+            <ellipse class="l-deep" cx="74" cy="-8" rx="10" ry="13"/>
+            <ellipse class="l-ink" cx="71" cy="-12" rx="2" ry="3.2"/>
+            <ellipse class="l-ink" cx="77" cy="-5" rx="2" ry="3.2"/>
+            <circle class="l-ink" cx="52" cy="-22" r="4"/>
+            <circle class="l-red" cx="55" cy="-3" r="6"/>
+            <path class="l-yellow2" d="M-30-28C-40-70-10-96 10-86 0-78 8-74 4-66c10 2 10 10 2 16 6 6 0 14-10 16z" transform="translate(5 5)"/>
+            <path class="l-white" d="M-30-28C-40-70-10-96 10-86 0-78 8-74 4-66c10 2 10 10 2 16 6 6 0 14-10 16z"/>
+          </g>
+        </g>
+      </svg>
+    </figure>
+  </section>
+
+  <svg class="edge edge--cobalt" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path id="edge-a"/></svg>
+
+  <!-- La carte -->
+  <section class="menu" id="carte" aria-labelledby="menu-title">
+    <div class="sheet-stack"><div class="sheet">
+      <header class="sheet__head">
+        <h2 id="menu-title" data-i18n="menu.title">La carte</h2>
+        <p data-i18n="menu.intro">Ce que l'on vient chercher ici. L'ardoise change avec le marché.</p>
+      </header>
+      <div class="sheet__cols" id="menu-list"></div>
+      <p class="sheet__note" data-i18n="menu.note">Prix à l'ardoise, sur place. Une question sur la carte du jour ? Appelez-nous au <a href="tel:+33658014216">06 58 01 42 16</a>.</p>
+    </div></div>
+  </section>
+
+  <svg class="edge edge--night" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path id="edge-b"/></svg>
+
+  <!-- Avis -->
+  <section class="reviews" id="avis" aria-labelledby="reviews-title">
+    <div class="reviews__head">
+      <h2 id="reviews-title" data-i18n="reviews.title">Ce qu'en disent les passagers</h2>
+      <p class="reviews__score"><strong>4,9</strong><span>/5</span> <span data-i18n="reviews.score">sur environ 700 avis Google</span></p>
+    </div>
+    <ul class="strips" id="review-list"></ul>
+    <p class="reviews__src" data-i18n="reviews.src">Extraits d'avis publics laissés sur Google, reproduits tels quels.</p>
+  </section>
+
+  <svg class="edge edge--paper" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path id="edge-c"/></svg>
+
+  <!-- Nous trouver -->
+  <section class="find" id="trouver" aria-labelledby="find-title">
+    <div class="find__info">
+      <h2 id="find-title" data-i18n="find.title">Point d'atterrissage</h2>
+      <address>
+        15 rue Jules-César<br>75012 Paris
+      </address>
+      <p class="find__transit" data-i18n="find.transit">Métro Bastille (1, 5, 8), Gare de Lyon (1, 14, RER A et D), Quai de la Rapée (5).</p>
+      <p><a class="find__phone" href="tel:+33658014216">06 58 01 42 16</a></p>
+      <p class="status" id="status" aria-live="polite"></p>
+      <table class="hours" aria-labelledby="hours-cap">
+        <caption id="hours-cap" data-i18n="find.hours">Horaires</caption>
+        <tbody id="hours-body"></tbody>
+      </table>
+      <p><a class="find__dir" href="https://www.google.com/maps/search/?api=1&query=Au+Cochon+Volant+15+Rue+Jules+C%C3%A9sar+75012+Paris" target="_blank" rel="noopener" data-i18n="find.dir">Itinéraire dans Google Maps</a></p>
+    </div>
+    <div class="find__map">
+      <iframe title="Carte : Au Cochon Volant, 15 rue Jules-César, Paris 12e" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Au%20Cochon%20Volant%2C%2015%20Rue%20Jules%20C%C3%A9sar%2C%2075012%20Paris&z=16&output=embed"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <svg class="foot__logo" aria-hidden="true"><use href="#pig-logo"/></svg>
+  <p class="foot__line" data-i18n="foot.line">Quand les cochons voleront ? C'est déjà le cas.</p>
+  <p class="foot__meta">Au Cochon Volant · 15 rue Jules-César, 75012 Paris · <a href="tel:+33658014216">06 58 01 42 16</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
